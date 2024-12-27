@@ -73,7 +73,7 @@ test('Applitools', async ({page, eyes}) =>
     // await page.pause();
     // await eyes.check('Api Page');
 });
-test.only('RahulShettyAcademy E-Commerce', async ({page,eyes}) =>
+test('RahulShettyAcademy E-Commerce', async ({page,eyes}) =>
 {
     await page.goto('/client/');
     await eyes.check('Login Page');
