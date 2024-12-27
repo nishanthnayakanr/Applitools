@@ -73,7 +73,7 @@ test('Applitools', async ({page, eyes}) =>
     // await page.pause();
     // await eyes.check('Api Page');
 });
-test('RahulShettyAcademy E-Commerce', async ({page,eyes}) =>
+test.only('RahulShettyAcademy E-Commerce', async ({page,eyes}) =>
 {
     await page.goto('/client/');
     await eyes.check('Login Page');
@@ -91,5 +91,6 @@ test('RahulShettyAcademy E-Commerce', async ({page,eyes}) =>
     await page.getByText(' India', {exact : true}).click();
     await page.getByText('Place Order ', {exact : true}).click();
     await eyes.check('Order page');
+    // await page.pause();
 
 });
